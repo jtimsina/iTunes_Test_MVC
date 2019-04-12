@@ -9,28 +9,28 @@
 import Foundation
 import UIKit
 
-let iTunes_JSON = Data()
-var media_results = [Result]()
+let itunesJson = Data()
+var mediaResults = [Result]()
 
-class ArtistMedia: UITableViewCell {
+class artistMedia: UITableViewCell {
     
     var newView: UIImageView!
-    var artistname: UILabel!
-    var albumname: UILabel!
-    var mediatype: UILabel!
+    var artistName: UILabel!
+    var albumName: UILabel!
+    var mediaType: UILabel!
     
     init(frame: CGRect, title: String) {
         super.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         
         newView = UIImageView(frame: CGRect(x: 0,y: 0,width: 100,height: 100))
-        artistname = UILabel(frame: CGRect(x: 120,y: 10,width: 200,height: 25))
-        artistname.font = UIFont.boldSystemFont(ofSize: artistname.font.pointSize)
-        albumname = UILabel(frame: CGRect(x: 120,y: 35,width: 200,height: 25))
-        mediatype = UILabel(frame: CGRect(x: 120,y: 60,width: 200,height: 25))
+        artistName = UILabel(frame: CGRect(x: 120,y: 10,width: 200,height: 25))
+        artistName.font = UIFont.boldSystemFont(ofSize: artistName.font.pointSize)
+        albumName = UILabel(frame: CGRect(x: 120,y: 35,width: 200,height: 25))
+        mediaType = UILabel(frame: CGRect(x: 120,y: 60,width: 200,height: 25))
         addSubview(newView)
-        addSubview(artistname)
-        addSubview(albumname)
-        addSubview(mediatype)
+        addSubview(artistName)
+        addSubview(albumName)
+        addSubview(mediaType)
     }
     
     required init?(coder aDecoder: NSCoder) {
