@@ -12,6 +12,9 @@
 		741DC7512260BB2D000F427D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741DC74F2260BB2D000F427D /* Main.storyboard */; };
 		741DC7532260BB2E000F427D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741DC7522260BB2E000F427D /* Assets.xcassets */; };
 		741DC7562260BB2E000F427D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741DC7542260BB2E000F427D /* LaunchScreen.storyboard */; };
+		741DC7612260BD90000F427D /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC7602260BD90000F427D /* JSON.swift */; };
+		741DC7632260BDC1000F427D /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC7622260BDC1000F427D /* Entities.swift */; };
+		741DC7652260BDF7000F427D /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC7642260BDF7000F427D /* Links.swift */; };
 		7445712A2E7A23F226068BBD /* Pods_iTunes_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1B15865E918A82A236EF78 /* Pods_iTunes_Media.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,9 @@
 		741DC7522260BB2E000F427D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		741DC7552260BB2E000F427D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		741DC7572260BB2E000F427D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		741DC7602260BD90000F427D /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		741DC7622260BDC1000F427D /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		741DC7642260BDF7000F427D /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		AC1B15865E918A82A236EF78 /* Pods_iTunes_Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunes_Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23E4A0EEDCB30C18E1337D2 /* Pods-iTunes_Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunes_Media.debug.xcconfig"; path = "Target Support Files/Pods-iTunes_Media/Pods-iTunes_Media.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +69,9 @@
 			children = (
 				741DC74B2260BB2D000F427D /* AppDelegate.swift */,
 				741DC74D2260BB2D000F427D /* ViewController.swift */,
+				741DC75D2260BD49000F427D /* Models */,
+				741DC75F2260BD5A000F427D /* Views */,
+				741DC75E2260BD51000F427D /* Controllers */,
 				741DC74F2260BB2D000F427D /* Main.storyboard */,
 				741DC7522260BB2E000F427D /* Assets.xcassets */,
 				741DC7542260BB2E000F427D /* LaunchScreen.storyboard */,
@@ -71,13 +80,36 @@
 			path = iTunes_Media;
 			sourceTree = "<group>";
 		};
+		741DC75D2260BD49000F427D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				741DC7602260BD90000F427D /* JSON.swift */,
+				741DC7622260BDC1000F427D /* Entities.swift */,
+				741DC7642260BDF7000F427D /* Links.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		741DC75E2260BD51000F427D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		741DC75F2260BD5A000F427D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D4AC7A31D2E582A4601D7B33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C23E4A0EEDCB30C18E1337D2 /* Pods-iTunes_Media.debug.xcconfig */,
 				2766C7A94CCA34ED8C0873E7 /* Pods-iTunes_Media.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +132,7 @@
 				741DC7442260BB2D000F427D /* Sources */,
 				741DC7452260BB2D000F427D /* Frameworks */,
 				741DC7462260BB2D000F427D /* Resources */,
+				BBCD76DE030CCDD18A6D3856 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +212,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BBCD76DE030CCDD18A6D3856 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunes_Media/Pods-iTunes_Media-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTunes_Media/Pods-iTunes_Media-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -186,7 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741DC7652260BDF7000F427D /* Links.swift in Sources */,
+				741DC7612260BD90000F427D /* JSON.swift in Sources */,
 				741DC74E2260BB2D000F427D /* ViewController.swift in Sources */,
+				741DC7632260BDC1000F427D /* Entities.swift in Sources */,
 				741DC74C2260BB2D000F427D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WNRAAJ27A;
 				INFOPLIST_FILE = iTunes_Media/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WNRAAJ27A;
 				INFOPLIST_FILE = iTunes_Media/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

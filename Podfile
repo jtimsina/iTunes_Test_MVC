@@ -6,5 +6,7 @@ target 'iTunes_Media' do
   use_frameworks!
 
   # Pods for iTunes_Media
+  pod 'Kingfisher'
+  pod 'JGProgressHUD'
 
 end
