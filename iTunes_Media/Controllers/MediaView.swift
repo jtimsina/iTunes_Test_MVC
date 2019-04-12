@@ -24,7 +24,7 @@ class MediaView: MediaProcession {
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
         myTableView.dataSource = self
         myTableView.delegate = self
-        myTableView.backgroundColor = UIColor.lightGray
+        myTableView.backgroundColor = UIColor.white
         self.view.addSubview(myTableView)
         myTableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
