@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,8 @@
 		741DC7632260BDC1000F427D /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC7622260BDC1000F427D /* Entities.swift */; };
 		741DC7652260BDF7000F427D /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC7642260BDF7000F427D /* Links.swift */; };
 		741DC7692260C158000F427D /* MediaProcession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC7682260C158000F427D /* MediaProcession.swift */; };
-		7445712A2E7A23F226068BBD /* Pods_iTunes_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1B15865E918A82A236EF78 /* Pods_iTunes_Media.framework */; };
+		741DC76D2260C5BB000F427D /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DC76C2260C5BB000F427D /* MediaView.swift */; };
+		7445712A2E7A23F226068BBD /* Pods_iTunes_Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1B15865E918A82A236EF78 /* Pods_iTunes_Media.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		741DC7622260BDC1000F427D /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		741DC7642260BDF7000F427D /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		741DC7682260C158000F427D /* MediaProcession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaProcession.swift; sourceTree = "<group>"; };
+		741DC76C2260C5BB000F427D /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
 		AC1B15865E918A82A236EF78 /* Pods_iTunes_Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunes_Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23E4A0EEDCB30C18E1337D2 /* Pods-iTunes_Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunes_Media.debug.xcconfig"; path = "Target Support Files/Pods-iTunes_Media/Pods-iTunes_Media.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,9 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				741DC74B2260BB2D000F427D /* AppDelegate.swift */,
+				741DC76B2260C583000F427D /* Controllers */,
 				741DC75D2260BD49000F427D /* Models */,
 				741DC75F2260BD5A000F427D /* Views */,
-				741DC75E2260BD51000F427D /* Controllers */,
 				741DC74F2260BB2D000F427D /* Main.storyboard */,
 				741DC7522260BB2E000F427D /* Assets.xcassets */,
 				741DC7542260BB2E000F427D /* LaunchScreen.storyboard */,
@@ -89,19 +91,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		741DC75E2260BD51000F427D /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		741DC75F2260BD5A000F427D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				741DC7682260C158000F427D /* MediaProcession.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		741DC76B2260C583000F427D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				741DC76C2260C5BB000F427D /* MediaView.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D4AC7A31D2E582A4601D7B33 /* Pods */ = {
@@ -159,7 +162,7 @@
 				};
 			};
 			buildConfigurationList = 741DC7432260BB2D000F427D /* Build configuration list for PBXProject "iTunes_Media" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -248,6 +251,7 @@
 				741DC7612260BD90000F427D /* JSON.swift in Sources */,
 				741DC7632260BDC1000F427D /* Entities.swift in Sources */,
 				741DC74C2260BB2D000F427D /* AppDelegate.swift in Sources */,
+				741DC76D2260C5BB000F427D /* MediaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
