@@ -11,7 +11,7 @@ import UIKit
 
 class MediaView: MediaProcession {
     
-    
+    // pull, commit, push, pull
     
     override func viewDidLoad() {
         super.viewDidLoad()
