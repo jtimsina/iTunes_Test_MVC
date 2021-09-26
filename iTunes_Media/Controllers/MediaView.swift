@@ -12,7 +12,7 @@ import UIKit
 class MediaView: MediaProcession {
     
     // pull, commit, push, pull
-    
+    // Froy training
     override func viewDidLoad() {
         super.viewDidLoad()
         
