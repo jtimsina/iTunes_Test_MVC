@@ -13,6 +13,13 @@ class MediaView: MediaProcession {
     
     // pull, commit, push, pull
     // Froy training
+    
+    
+    //New label made
+    var yagmurIsAwesome = UILabel()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
