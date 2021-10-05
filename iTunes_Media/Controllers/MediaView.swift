@@ -15,10 +15,7 @@ class MediaView: MediaProcession {
     // Froy training
     
     
-    //New label made
-    var yagmurIsAwesome = UILabel()
-    
-    //helloworld
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
